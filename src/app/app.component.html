@@ -1,52 +1,112 @@
-<div>
-  <header class="bg-white space-y-4 p-4 sm:px-8 sm:py-6 lg:p-4 xl:px-8 xl:py-6">
-    <div class="flex items-center justify-between">
-      <h2 class="font-semibold text-slate-900">Projects</h2>
-      <a href="/new" class="hover:bg-blue-400 group flex items-center rounded-md bg-blue-500 text-white text-sm font-medium pl-2 pr-3 py-2 shadow-sm">
-        <svg width="20" height="20" fill="currentColor" class="mr-2" aria-hidden="true">
-          <path d="M10 5a1 1 0 0 1 1 1v3h3a1 1 0 1 1 0 2h-3v3a1 1 0 1 1-2 0v-3H6a1 1 0 1 1 0-2h3V6a1 1 0 0 1 1-1Z" />
-        </svg>
-        New
-      </a>
-    </div>
-    <form class="group relative">
-      <svg width="20" height="20" fill="currentColor" class="absolute left-3 top-1/2 -mt-2.5 text-slate-400 pointer-events-none group-focus-within:text-blue-500" aria-hidden="true">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" />
-      </svg>
-      <input class="focus:ring-2 focus:ring-blue-500 focus:outline-none appearance-none w-full text-sm leading-6 text-slate-900 placeholder-slate-400 rounded-md py-2 pl-10 ring-1 ring-slate-200 shadow-sm" type="text" aria-label="Filter projects" placeholder="Filter projects...">
-    </form>
-  </header>
-  <ul class="bg-slate-50 p-4 sm:px-8 sm:pt-6 sm:pb-8 lg:p-4 xl:px-8 xl:pt-6 xl:pb-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-4 text-sm leading-6">
-    <li x-for="project in projects">
-      <a :href="project.url" class="hover:bg-blue-500 hover:ring-blue-500 hover:shadow-md group rounded-md p-3 bg-white ring-1 ring-slate-200 shadow-sm">
-        <dl class="grid sm:block lg:grid xl:block grid-cols-2 grid-rows-2 items-center">
-          <div>
-            <dt class="sr-only">Title</dt>
-            <dd class="group-hover:text-white font-semibold text-slate-900">
-              project.title
-            </dd>
-          </div>
-          <div>
-            <dt class="sr-only">Category</dt>
-            <dd class="group-hover:text-blue-200">project.category</dd>
-          </div>
-          <div class="col-start-2 row-start-1 row-end-3 sm:mt-4 lg:mt-0 xl:mt-4">
-            <dt class="sr-only">Users</dt>
-            <dd x-for="user in project.users" class="flex justify-end sm:justify-start lg:justify-end xl:justify-start -space-x-1.5">
-              <img :src="user.avatar" :alt="user.name" class="w-6 h-6 rounded-full bg-slate-100 ring-2 ring-white" loading="lazy">
-            </dd>
-          </div>
-        </dl>
-      </a>
-    </li>
-    <li class="flex">
-      <a href="/new" class="hover:border-blue-500 hover:border-solid hover:bg-white hover:text-blue-500 group w-full flex flex-col items-center justify-center rounded-md border-2 border-dashed border-slate-300 text-sm leading-6 text-slate-900 font-medium py-3">
-        <svg class="group-hover:text-blue-500 mb-1 text-slate-400" width="20" height="20" fill="currentColor" aria-hidden="true">
-          <path d="M10 5a1 1 0 0 1 1 1v3h3a1 1 0 1 1 0 2h-3v3a1 1 0 1 1-2 0v-3H6a1 1 0 1 1 0-2h3V6a1 1 0 0 1 1-1Z" />
-        </svg>
-        New project
-      </a>
-    </li>
-  </ul>
-</div>
+<div class="min-h-screen flex flex-col">
 
+  <header class="fixed top-0 left-0 w-full bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 shadow-md z-50">
+    <div class="container mx-auto px-4 py-2">
+      <nav class="flex flex-wrap justify-center space-x-4 sm:space-x-6 md:space-x-8">
+        <a href="#home-section" class="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all">Home</a>
+        <a href="#about-section" class="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all">About</a>
+        <a href="#projects-section" class="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all">Projects</a>
+        <a href="#skills-section" class="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all">Skills</a>
+        <a href="#contact-section" class="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-grow mt-[4rem]"> <!-- Adjust margin-top for header height -->
+
+    <section id="home-section">
+
+    </section>
+
+    <section id="about-section">
+      
+    </section>
+
+    <section id="projects-section">
+      
+    </section>
+
+    <section id="skills-section" class="py-8 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200">
+      <div class="container max-w-4xl mx-auto px-4">
+        <h2 class="text-2xl font-bold text-center mb-4">Skills</h2>
+        <div class="flex flex-wrap justify-center gap-3">
+          <span class="px-4 py-2 bg-blue-500 text-white rounded-md shadow hover:bg-blue-600">Git</span>
+          <span class="px-4 py-2 bg-blue-500 text-white rounded-md shadow hover:bg-blue-600">Java</span>
+          <span class="px-4 py-2 bg-blue-500 text-white rounded-md shadow hover:bg-blue-600">Spring Boot</span>
+          <span class="px-4 py-2 bg-blue-500 text-white rounded-md shadow hover:bg-blue-600">Docker</span>
+          <span class="px-4 py-2 bg-blue-500 text-white rounded-md shadow hover:bg-blue-600">Kubernetes</span>
+          <span class="px-4 py-2 bg-blue-500 text-white rounded-md shadow hover:bg-blue-600">SQL</span>
+          <span class="px-4 py-2 bg-blue-500 text-white rounded-md shadow hover:bg-blue-600">Python</span>
+          <span class="px-4 py-2 bg-blue-500 text-white rounded-md shadow hover:bg-blue-600">Scala</span>
+          <span class="px-4 py-2 bg-blue-500 text-white rounded-md shadow hover:bg-blue-600">React</span>
+          <span class="px-4 py-2 bg-blue-500 text-white rounded-md shadow hover:bg-blue-600">Tailwind CSS</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-section" class="py-8 bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-bold text-center mb-4">Contact Me</h2>
+    
+        <!-- Contact Details -->
+        <div class="text-center mb-6">
+          <p class="mb-2">
+            <strong>Email:</strong> <a href="mailto:your-emailATexample.com" class="text-blue-500 hover:underline">your-emailATexample.com</a>
+          </p>
+          <p>
+            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/your-profile" target="_blank" class="text-blue-500 hover:underline">https://www.linkedin.com/in/your-profile</a>
+          </p>
+        </div>
+    
+        <!-- Contact Form -->
+        <form action="#" method="POST" class="max-w-lg mx-auto bg-white dark:bg-gray-800 p-6 rounded shadow-md">
+          <div class="mb-4">
+            <label for="name" class="block text-sm font-medium mb-2">Name</label>
+            <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 dark:border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+          </div>
+    
+          <div class="mb-4">
+            <label for="email" class="block text-sm font-medium mb-2">Email</label>
+            <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 dark:border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+          </div>
+    
+          <div class="mb-4">
+            <label for="message" class="block text-sm font-medium mb-2">Message</label>
+            <textarea id="message" name="message" rows="4" class="w-full p-3 border border-gray-300 dark:border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+          </div>
+    
+          <button type="submit" class="w-full bg-blue-500 text-white p-3 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 py-4">
+    <div class="container mx-auto px-4 flex flex-col items-center">
+      <!-- Social Links -->
+      <div class="flex space-x-4 mb-2">
+        <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H22.675c.732 0 1.325-.593 1.325-1.325V1.325C24 .593 23.407 0 22.675 0zm-1.95 7.075h-1.532c-.482 0-.792.225-.924.656-.134.428-.201 1.043-.201 1.843v2.7h2.656l-.347 2.684H18.07v7.744h-2.812v-7.744h-2.295V12.27h2.295V9.715c0-2.296 1.329-3.543 3.301-3.543.944 0 1.755.07 1.988.102v2.281z" />
+          </svg>
+        </a>
+        <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 4.557a9.993 9.993 0 01-2.828.775A4.936 4.936 0 0023.337 3c-.935.555-1.97.96-3.07 1.184A4.92 4.92 0 0016.616 3a4.92 4.92 0 00-4.917 4.917c0 .385.043.762.127 1.122A13.978 13.978 0 011.671 3.149a4.902 4.902 0 00-.666 2.473 4.922 4.922 0 002.188 4.102 4.93 4.93 0 01-2.228-.615v.061a4.921 4.921 0 003.946 4.827 4.935 4.935 0 01-2.22.085 4.93 4.93 0 004.598 3.417A9.867 9.867 0 010 21.54a13.934 13.934 0 007.548 2.209c9.056 0 14.01-7.496 14.01-13.986 0-.21-.005-.423-.014-.633A9.936 9.936 0 0024 4.557z" />
+          </svg>
+        </a>
+        <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2.163c-5.428 0-9.837 4.391-9.837 9.795 0 4.898 3.592 8.965 8.318 9.795v-6.92h-2.515v-2.717h2.515v-2.057c0-2.49 1.492-3.861 3.747-3.861 1.086 0 2.223.194 2.223.194v2.457h-1.252c-1.235 0-1.618.767-1.618 1.552v1.716h2.77l-.444 2.717h-2.326v6.921c4.726-.83 8.318-4.897 8.318-9.795 0-5.404-4.409-9.795-9.837-9.795z" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Copyright Text -->
+      <p class="text-sm text-center">&copy; 2024 Abhishek Anand. All rights reserved.</p>
+    </div>
+
+  </footer>
+
+</div>
