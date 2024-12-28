@@ -1,30 +1,125 @@
-<div class="min-h-screen flex flex-col">
+<div class="min-h-screen flex flex-col bg-gray-100 dark:bg-gray-900">
 
   <header class="fixed top-0 left-0 w-full bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 shadow-md z-50">
     <div class="container mx-auto px-4 py-2">
       <nav class="flex flex-wrap justify-center space-x-4 sm:space-x-6 md:space-x-8">
-        <a href="#home-section" class="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all">Home</a>
         <a href="#about-section" class="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all">About</a>
+        <a href="#experience-section" class="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all">Experience</a>
         <a href="#projects-section" class="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all">Projects</a>
         <a href="#skills-section" class="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all">Skills</a>
-        <a href="#contact-section" class="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all">Contact</a>
+        <a href="#contact-section" class="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all">Contact me</a>
       </nav>
     </div>
   </header>
 
   <main class="flex-grow mt-[4rem]"> <!-- Adjust margin-top for header height -->
 
-    <section id="home-section">
-
+    <section id="about-section" class="py-8 bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+      <div class="container max-w-4xl mx-auto px-4">
+        <h2 class="text-2xl font-bold text-center mb-4">About Me</h2>
+        <div class="flex flex-col lg:flex-row items-center lg:items-start">
+          <div class="flex-shrink-0 lg:mr-6 mb-6 lg:mb-0">
+            <img src="../assets/profile-pic.jpeg" alt="My profile pic" class="w-48 h-48 rounded-full border-4 border-gray-300 dark:border-gray-700 shadow-lg">
+          </div>
+          <!-- Text Section -->
+          <div>
+            <p class="text-center leading-relaxed">
+              I am a passionate software engineer with a strong interest in coding and learning new technologies. With experience in diverse fields like Angular, Spring Boot, and Data Engineering, I enjoy solving challenging problems and building robust solutions. Despite starting my journey with a degree in Mechanical Engineering, I have transitioned into the tech world, where I thrive on continuous learning and innovation.
+            </p>
+            <div class="text-center mt-[1rem]">
+              <a href="../assets/abhishek_anand_resume.pdf" target="_blank" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                View my Resume
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="about-section">
-      
+    <section id="experience-section" class="py-8 bg-gray-50 dark:bg-gray-800 text-gray-800 dark:text-gray-200">
+      <div class="container max-w-4xl mx-auto px-4">
+        <h2 class="text-2xl font-bold text-center mb-4">Experience</h2>
+        <div class="relative border-l border-gray-300 dark:border-gray-700">
+          <!-- Experience 1 -->
+          <div class="mb-8 ml-6">
+            <div class="absolute -left-3 w-6 h-6 bg-blue-500 rounded-full border-2 border-white dark:border-gray-800"></div>
+            <div class="bg-white dark:bg-gray-700 p-4 rounded shadow-md">
+              <h3 class="text-lg font-bold">Software Engineer</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400">Company Name</p>
+              <p class="text-sm text-gray-600 dark:text-gray-400">Jan 2021 - Present</p>
+              <p class="text-sm mt-2">Developed scalable applications using Spring Boot and Angular. Collaborated with cross-functional teams to deliver high-quality software solutions.</p>
+            </div>
+          </div>
+    
+          <!-- Experience 2 -->
+          <div class="mb-8 ml-6">
+            <div class="absolute -left-3 w-6 h-6 bg-blue-500 rounded-full border-2 border-white dark:border-gray-800"></div>
+            <div class="bg-white dark:bg-gray-700 p-4 rounded shadow-md">
+              <h3 class="text-lg font-bold">Data Engineer</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400">Company Name</p>
+              <p class="text-sm text-gray-600 dark:text-gray-400">Jun 2018 - Dec 2020</p>
+              <p class="text-sm mt-2">Worked on large-scale data pipelines using Spark and Scala. Designed data models and optimized queries for analytics workflows.</p>
+            </div>
+          </div>
+    
+          <!-- Experience 3 -->
+          <div class="mb-8 ml-6">
+            <div class="absolute -left-3 w-6 h-6 bg-blue-500 rounded-full border-2 border-white dark:border-gray-800"></div>
+            <div class="bg-white dark:bg-gray-700 p-4 rounded shadow-md">
+              <h3 class="text-lg font-bold">Intern - Software Development</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400">Company Name</p>
+              <p class="text-sm text-gray-600 dark:text-gray-400">Jan 2018 - May 2018</p>
+              <p class="text-sm mt-2">Assisted in developing APIs using Java. Learned and implemented best coding practices in a professional environment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+    
 
-    <section id="projects-section">
-      
+    <section id="projects-section" class="py-8 bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+      <div class="container max-w-4xl mx-auto px-4">
+        <h2 class="text-2xl font-bold text-center mb-4">Projects</h2>
+        <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Project Card 1 -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4">
+            <img src="project1.jpg" alt="Project 1" class="rounded mb-4">
+            <h3 class="text-lg font-bold mb-2">Project Title 1</h3>
+            <p class="text-sm mb-2">Brief description of the project goes here. It explains the goal and key features.</p>
+            <p class="text-sm mb-2"><strong>Technologies:</strong> JavaScript, React, Node.js</p>
+            <div class="flex space-x-4">
+              <a href="https://github.com/your-repo" target="_blank" class="text-blue-500 hover:underline">GitHub</a>
+              <a href="https://liveprojectlink.com" target="_blank" class="text-blue-500 hover:underline">Live Demo</a>
+            </div>
+          </div>
+    
+          <!-- Project Card 2 -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4">
+            <img src="project2.jpg" alt="Project 2" class="rounded mb-4">
+            <h3 class="text-lg font-bold mb-2">Project Title 2</h3>
+            <p class="text-sm mb-2">Brief description of the project goes here. It explains the goal and key features.</p>
+            <p class="text-sm mb-2"><strong>Technologies:</strong> Python, Flask, SQL</p>
+            <div class="flex space-x-4">
+              <a href="https://github.com/your-repo" target="_blank" class="text-blue-500 hover:underline">GitHub</a>
+              <a href="https://liveprojectlink.com" target="_blank" class="text-blue-500 hover:underline">Live Demo</a>
+            </div>
+          </div>
+    
+          <!-- Project Card 3 -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4">
+            <img src="project3.jpg" alt="Project 3" class="rounded mb-4">
+            <h3 class="text-lg font-bold mb-2">Project Title 3</h3>
+            <p class="text-sm mb-2">Brief description of the project goes here. It explains the goal and key features.</p>
+            <p class="text-sm mb-2"><strong>Technologies:</strong> Java, Spring Boot, MySQL</p>
+            <div class="flex space-x-4">
+              <a href="https://github.com/your-repo" target="_blank" class="text-blue-500 hover:underline">GitHub</a>
+              <a href="https://liveprojectlink.com" target="_blank" class="text-blue-500 hover:underline">Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+    
 
     <section id="skills-section" class="py-8 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200">
       <div class="container max-w-4xl mx-auto px-4">
