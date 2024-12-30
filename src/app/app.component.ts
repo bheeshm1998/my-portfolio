@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
-import { EMAIL_JS_PUBLIC_KEY, EMAIL_JS_SERVICE_ID, EMAIL_JS_TEMPLATE_ID } from './constants';
+import { EMAIL_JS_PUBLIC_KEY, EMAIL_JS_SERVICE_ID, EMAIL_JS_TEMPLATE_ID, MY_EMAIL_ADDRESS } from './constants';
 
 @Component({
   selector: 'app-root',
@@ -15,8 +15,8 @@ import { EMAIL_JS_PUBLIC_KEY, EMAIL_JS_SERVICE_ID, EMAIL_JS_TEMPLATE_ID } from '
 export class AppComponent {
 
   contactForm: FormGroup;
-  
-  title = 'my-portfolio';
+
+  MY_EMAIL_ADDRESS = MY_EMAIL_ADDRESS;
 
   constructor(private fb: FormBuilder) {
     this.contactForm = this.fb.group({
